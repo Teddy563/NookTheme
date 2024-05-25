@@ -1,18 +1,6 @@
 name: Docker
 
-on:
-  push:
-    branches:
-      - develop
-      - 1.0-develop
-      - release/v1.11.5
-  pull_request:
-    branches:
-      - develop
-      - 1.0-develop
-  release:
-    types:
-      - published
+on: workflow_dispatch
 
 jobs:
   push:
